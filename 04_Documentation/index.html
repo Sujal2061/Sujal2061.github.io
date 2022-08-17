@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="styles.css" />
+        <title></title>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Baloo+Bhai+2&family=Domine&family=Russo+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        
+        <nav id="navbar">
+            <header id="nav-head">HTML Documentation</header>
+            <ul>
+            <li><a class="nav-link" href="#So_what_is_HTML?">So what is HTML?</a></li>
+            <li><a class="nav-link" href="#Anatomy_of_an_HTML_element">Anatomy of an HTML element</a></li>
+            <li><a class="nav-link" href="#Nesting_elements">Nesting elements</a></li>
+            <li><a class="nav-link" href="#Empty_elements">Empty elements</a></li>
+            <li><a class="nav-link" href="#Anatomy_of_an_HTML_document">Anatomy of an HTML document</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+
+        <section class="main-section" id="So_what_is_HTML?">
+          <header>So what is HTML?</header>
+          <article>
+          <p>HTML is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on. For example, take the following line of content:</p>
+          
+          <code>My cat is very grumpy</code>
+          <p>If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in paragraph tags:</p>
+          <code>My cat is very grumpy</code>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa optio a sed tempore, possimus corrupti blanditiis perferendis. Fugit dolores ullam aut incidunt?</p>
+          <ul>
+            <li>HTML is very easy!</li>
+            <li>Life is very easy!</li>
+          </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Anatomy_of_an_HTML_element">
+          <header>Anatomy of an HTML element</header>
+          <article>
+            <p>The main parts of our element are as follows:</p>
+            <ul>
+                <li><b>The opening tag:</b> This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the paragraph begins.</li>
+                <li><b>The closing tag:</b> This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the paragraph ends. Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.</li>
+                <li><b>The content:</b> This is the content of the element, which in this case, is just text.</li>
+                <li><b>The element:</b> The opening tag, the closing tag, and the content together comprise the element.</li>
+            </ul>
+            <p>Attributes contain extra information about the element that you don't want to appear in the actual content. Here, <code class="inline-code">class</code> is the attribute name and <code class="inline-code">editor-note</code> is the attribute value. The <code class="inline-code">class</code> attribute allows you to give the element a non-unique identifier that can be used to target it (and any other elements with the same class value) with style information and other things.</p>
+          </article>
+          </section>
+
+        <section class="main-section" id="Nesting_elements">
+          <header>Nesting elements</header>
+          <article>
+            You can put elements inside other elements too — this is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word "very" in a <code class="inline-code">&lt;strong&gt;</code> element, which means that the word is to be strongly emphasized:
+            <code>&lt;p&gt;My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;</code>
+            <p>You do however need to make sure that your elements are properly nested. In the example above, we opened the &lt;p&gt; element first, then the &lt;strong&gt;&lt;element; therefore, we have to close the &lt;strong&gt; element first, then the &lt;p&gt; element. The following is incorrect:</p>
+                <code>&lt;p&gt;My cat is &lt;strong&gt;very grumpy.&lt;/p&gt;&lt;/strong&gt;</code>
+                <p>The elements have to open and close correctly so that they are clearly inside or outside one another. If they overlap as shown above, then your web browser will try to make the best guess at what you were trying to say, which can lead to unexpected results. So don't do it!</p>
+          </article>
+          </section>
+
+        <section class="main-section" id="Empty_elements">
+          <header>Empty elements</header>
+          <article>
+            <p>Some elements have no content and are called empty elements. Take the <img> element that we already have in our HTML page:</p>
+            <code>&lt;img src="images/firefox-icon.png" alt="My test image"&gt;</code>
+            <p>This contains two attributes, but there is no closing &lt;/img&gt; tag and no inner content. This is because an image element doesn't wrap content to affect it. Its purpose is to embed an image in the HTML page in the place it appears.</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, sit?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, sit?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, sit?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, sit?</li>
+            </ul>
+          </article>
+          </section>
+     
+        <section class="main-section" id="Anatomy_of_an_HTML_document">
+          <header>Anatomy of an HTML document</header>
+          <article>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex animi, quos voluptatum nesciunt quasi, molestiae impedit ipsum consequatur, assumenda fugiat voluptatem sint rerum modi fugit repellendus cum provident. Temporibus reprehenderit odio illum vitae soluta.</p>
+            <code>Fuck yeahhhh!!!!</code>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit consectetur aut vel eligendi quaerat. Mollitia doloribus aperiam ipsa voluptas quo?</p>
+          </article>
+          </section>
+
+      </main>
+
+
+      </body>
+      </html>
